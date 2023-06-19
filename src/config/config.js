@@ -1,0 +1,1 @@
+export const API_LARAVEL = 'http://localhost:8000/api/';
