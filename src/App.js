@@ -21,7 +21,7 @@ function App() {
       const url = 'https://pokeapi.co/api/v2/pokemon';
       const response = await axios.get(url);
 
-      if(response.status !== 200) {
+      if(response.status === 200) {
         const pokemonPromises = response.data.results.map((el) =>
           requestGetPokemon(el.url)
         );
